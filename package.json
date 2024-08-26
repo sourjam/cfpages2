@@ -13,9 +13,9 @@
     "db:studio:prod": "drizzle-kit studio",
     "build": "next build",
     "dev": "next dev",
-    "pages:build": "pnpm next-on-pages",
-    "pages:dev": "pnpm pages:build && pnpm wrangler pages dev",
-    "pages:deploy": "pnpm pages:build && pnpm wrangler pages deploy"
+    "pages:build": "npx @cloudflare/next-on-pages",
+    "pages:dev": "npm pages:build && npm wrangler pages dev",
+    "pages:deploy": "npm pages:build && npm wrangler pages deploy"
   },
   "dependencies": {
     "@tanstack/react-query": "^5.25.0",
